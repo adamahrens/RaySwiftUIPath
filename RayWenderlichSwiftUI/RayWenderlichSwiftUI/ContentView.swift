@@ -8,10 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+  var body: some View {
+    VStack {
+      Text("Hello, world!")
+        .padding()
+      
+      Image(systemName: "swift")
+      
+      HStack {
+        Image(systemName: "swift")
+          .resizable()
+          .frame(width: 100, height: 100)
+        Text("Swift man!")
+          .font(.largeTitle)
+          .foregroundColor(Color.green)
+          .padding(.leading, 10)
+      }
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
