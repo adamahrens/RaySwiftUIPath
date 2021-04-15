@@ -35,6 +35,9 @@ struct StateBinding: View {
 
 struct StateBinding_Previews: PreviewProvider {
     static var previews: some View {
+      Group {
         StateBinding()
+        StateBinding()
+      }
     }
 }
