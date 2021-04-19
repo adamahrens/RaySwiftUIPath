@@ -13,6 +13,8 @@
 		43171E3526267E810050CCAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43171E3426267E810050CCAC /* Preview Assets.xcassets */; };
 		43171E3E262681D20050CCAC /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43171E3D262681D20050CCAC /* Weather.swift */; };
 		43171E41262686010050CCAC /* StateBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43171E40262686010050CCAC /* StateBinding.swift */; };
+		43960ADD262DEE7700485DFA /* Stacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43960ADC262DEE7700485DFA /* Stacking.swift */; };
+		43960AE1262E05AC00485DFA /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43960AE0262E05AC00485DFA /* Challenge.swift */; };
 		439E2F192627D62D00DBEEED /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E2F182627D62D00DBEEED /* Status.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		43171E3626267E810050CCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43171E3D262681D20050CCAC /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		43171E40262686010050CCAC /* StateBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBinding.swift; sourceTree = "<group>"; };
+		43960ADC262DEE7700485DFA /* Stacking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacking.swift; sourceTree = "<group>"; };
+		43960AE0262E05AC00485DFA /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		439E2F182627D62D00DBEEED /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +67,8 @@
 				43171E3D262681D20050CCAC /* Weather.swift */,
 				43171E40262686010050CCAC /* StateBinding.swift */,
 				439E2F182627D62D00DBEEED /* Status.swift */,
+				43960ADC262DEE7700485DFA /* Stacking.swift */,
+				43960AE0262E05AC00485DFA /* Challenge.swift */,
 				43171E3126267E810050CCAC /* Assets.xcassets */,
 				43171E3626267E810050CCAC /* Info.plist */,
 				43171E3326267E810050CCAC /* Preview Content */,
@@ -147,11 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43960AE1262E05AC00485DFA /* Challenge.swift in Sources */,
 				43171E3026267E7F0050CCAC /* ContentView.swift in Sources */,
 				439E2F192627D62D00DBEEED /* Status.swift in Sources */,
 				43171E41262686010050CCAC /* StateBinding.swift in Sources */,
 				43171E3E262681D20050CCAC /* Weather.swift in Sources */,
 				43171E2E26267E7F0050CCAC /* RayWenderlichSwiftUIApp.swift in Sources */,
+				43960ADD262DEE7700485DFA /* Stacking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
