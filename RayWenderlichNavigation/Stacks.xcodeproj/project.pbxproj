@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43960AF1262E5B8D00485DFA /* RayWenderlichNavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43960AF0262E5B8D00485DFA /* RayWenderlichNavigationApp.swift */; };
-		43960AF3262E5B8D00485DFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43960AF2262E5B8D00485DFA /* ContentView.swift */; };
-		43960AF5262E5B8E00485DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43960AF4262E5B8E00485DFA /* Assets.xcassets */; };
-		43960AF8262E5B8E00485DFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43960AF7262E5B8E00485DFA /* Preview Assets.xcassets */; };
+		0A0D42DA256B772300D7A53B /* MixSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0D42D9256B772200D7A53B /* MixSubviews.swift */; };
+		0A359A962561709800BEB2F0 /* StacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A359A952561709800BEB2F0 /* StacksApp.swift */; };
+		0A359A982561709800BEB2F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A359A972561709800BEB2F0 /* ContentView.swift */; };
+		0A359A9A2561709900BEB2F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A359A992561709900BEB2F0 /* Assets.xcassets */; };
+		0A359A9D2561709900BEB2F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A359A9C2561709900BEB2F0 /* Preview Assets.xcassets */; };
+		0A80E8E5256483D0002E0112 /* MeowMix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80E8E4256483D0002E0112 /* MeowMix.swift */; };
+		0A80E8E82564B09C002E0112 /* MeowMixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80E8E72564B09C002E0112 /* MeowMixHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43960AED262E5B8D00485DFA /* RayWenderlichNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RayWenderlichNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		43960AF0262E5B8D00485DFA /* RayWenderlichNavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayWenderlichNavigationApp.swift; sourceTree = "<group>"; };
-		43960AF2262E5B8D00485DFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		43960AF4262E5B8E00485DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		43960AF7262E5B8E00485DFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		43960AF9262E5B8E00485DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0D42D9256B772200D7A53B /* MixSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixSubviews.swift; sourceTree = "<group>"; };
+		0A359A922561709800BEB2F0 /* Stacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A359A952561709800BEB2F0 /* StacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksApp.swift; sourceTree = "<group>"; };
+		0A359A972561709800BEB2F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A359A992561709900BEB2F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A359A9C2561709900BEB2F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A359A9E2561709900BEB2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A80E8E4256483D0002E0112 /* MeowMix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowMix.swift; sourceTree = "<group>"; };
+		0A80E8E72564B09C002E0112 /* MeowMixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowMixHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		43960AEA262E5B8D00485DFA /* Frameworks */ = {
+		0A359A8F2561709800BEB2F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,38 +39,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43960AE4262E5B8D00485DFA = {
+		0A359A892561709800BEB2F0 = {
 			isa = PBXGroup;
 			children = (
-				43960AEF262E5B8D00485DFA /* RayWenderlichNavigation */,
-				43960AEE262E5B8D00485DFA /* Products */,
+				0A359A942561709800BEB2F0 /* Stacks */,
+				0A359A932561709800BEB2F0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		43960AEE262E5B8D00485DFA /* Products */ = {
+		0A359A932561709800BEB2F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43960AED262E5B8D00485DFA /* RayWenderlichNavigation.app */,
+				0A359A922561709800BEB2F0 /* Stacks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		43960AEF262E5B8D00485DFA /* RayWenderlichNavigation */ = {
+		0A359A942561709800BEB2F0 /* Stacks */ = {
 			isa = PBXGroup;
 			children = (
-				43960AF0262E5B8D00485DFA /* RayWenderlichNavigationApp.swift */,
-				43960AF2262E5B8D00485DFA /* ContentView.swift */,
-				43960AF4262E5B8E00485DFA /* Assets.xcassets */,
-				43960AF9262E5B8E00485DFA /* Info.plist */,
-				43960AF6262E5B8E00485DFA /* Preview Content */,
+				0A359A952561709800BEB2F0 /* StacksApp.swift */,
+				0A359A972561709800BEB2F0 /* ContentView.swift */,
+				0A80E8E72564B09C002E0112 /* MeowMixHeader.swift */,
+				0A0D42D9256B772200D7A53B /* MixSubviews.swift */,
+				0A80E8E4256483D0002E0112 /* MeowMix.swift */,
+				0A359A992561709900BEB2F0 /* Assets.xcassets */,
+				0A359A9E2561709900BEB2F0 /* Info.plist */,
+				0A359A9B2561709900BEB2F0 /* Preview Content */,
 			);
-			path = RayWenderlichNavigation;
+			path = Stacks;
 			sourceTree = "<group>";
 		};
-		43960AF6262E5B8E00485DFA /* Preview Content */ = {
+		0A359A9B2561709900BEB2F0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				43960AF7262E5B8E00485DFA /* Preview Assets.xcassets */,
+				0A359A9C2561709900BEB2F0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -72,38 +81,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		43960AEC262E5B8D00485DFA /* RayWenderlichNavigation */ = {
+		0A359A912561709800BEB2F0 /* Stacks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43960AFC262E5B8E00485DFA /* Build configuration list for PBXNativeTarget "RayWenderlichNavigation" */;
+			buildConfigurationList = 0A359AA12561709900BEB2F0 /* Build configuration list for PBXNativeTarget "Stacks" */;
 			buildPhases = (
-				43960AE9262E5B8D00485DFA /* Sources */,
-				43960AEA262E5B8D00485DFA /* Frameworks */,
-				43960AEB262E5B8D00485DFA /* Resources */,
+				0A359A8E2561709800BEB2F0 /* Sources */,
+				0A359A8F2561709800BEB2F0 /* Frameworks */,
+				0A359A902561709800BEB2F0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RayWenderlichNavigation;
-			productName = RayWenderlichNavigation;
-			productReference = 43960AED262E5B8D00485DFA /* RayWenderlichNavigation.app */;
+			name = Stacks;
+			productName = Stacks;
+			productReference = 0A359A922561709800BEB2F0 /* Stacks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		43960AE5262E5B8D00485DFA /* Project object */ = {
+		0A359A8A2561709800BEB2F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					43960AEC262E5B8D00485DFA = {
-						CreatedOnToolsVersion = 12.4;
+					0A359A912561709800BEB2F0 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = 43960AE8262E5B8D00485DFA /* Build configuration list for PBXProject "RayWenderlichNavigation" */;
+			buildConfigurationList = 0A359A8D2561709800BEB2F0 /* Build configuration list for PBXProject "Stacks" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,42 +120,45 @@
 				en,
 				Base,
 			);
-			mainGroup = 43960AE4262E5B8D00485DFA;
-			productRefGroup = 43960AEE262E5B8D00485DFA /* Products */;
+			mainGroup = 0A359A892561709800BEB2F0;
+			productRefGroup = 0A359A932561709800BEB2F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43960AEC262E5B8D00485DFA /* RayWenderlichNavigation */,
+				0A359A912561709800BEB2F0 /* Stacks */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		43960AEB262E5B8D00485DFA /* Resources */ = {
+		0A359A902561709800BEB2F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43960AF8262E5B8E00485DFA /* Preview Assets.xcassets in Resources */,
-				43960AF5262E5B8E00485DFA /* Assets.xcassets in Resources */,
+				0A359A9D2561709900BEB2F0 /* Preview Assets.xcassets in Resources */,
+				0A359A9A2561709900BEB2F0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		43960AE9262E5B8D00485DFA /* Sources */ = {
+		0A359A8E2561709800BEB2F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43960AF3262E5B8D00485DFA /* ContentView.swift in Sources */,
-				43960AF1262E5B8D00485DFA /* RayWenderlichNavigationApp.swift in Sources */,
+				0A80E8E5256483D0002E0112 /* MeowMix.swift in Sources */,
+				0A0D42DA256B772300D7A53B /* MixSubviews.swift in Sources */,
+				0A80E8E82564B09C002E0112 /* MeowMixHeader.swift in Sources */,
+				0A359A982561709800BEB2F0 /* ContentView.swift in Sources */,
+				0A359A962561709800BEB2F0 /* StacksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		43960AFA262E5B8E00485DFA /* Debug */ = {
+		0A359A9F2561709900BEB2F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -197,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -207,7 +219,7 @@
 			};
 			name = Debug;
 		};
-		43960AFB262E5B8E00485DFA /* Release */ = {
+		0A359AA02561709900BEB2F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -252,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -262,44 +274,42 @@
 			};
 			name = Release;
 		};
-		43960AFD262E5B8E00485DFA /* Debug */ = {
+		0A359AA22561709900BEB2F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"RayWenderlichNavigation/Preview Content\"";
-				DEVELOPMENT_TEAM = DM75P97468;
+				DEVELOPMENT_ASSET_PATHS = "\"Stacks/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = RayWenderlichNavigation/Info.plist;
+				INFOPLIST_FILE = Stacks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = appsbyahrens.RayWenderlichNavigation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.Stacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		43960AFE262E5B8E00485DFA /* Release */ = {
+		0A359AA32561709900BEB2F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"RayWenderlichNavigation/Preview Content\"";
-				DEVELOPMENT_TEAM = DM75P97468;
+				DEVELOPMENT_ASSET_PATHS = "\"Stacks/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = RayWenderlichNavigation/Info.plist;
+				INFOPLIST_FILE = Stacks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = appsbyahrens.RayWenderlichNavigation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.Stacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		43960AE8262E5B8D00485DFA /* Build configuration list for PBXProject "RayWenderlichNavigation" */ = {
+		0A359A8D2561709800BEB2F0 /* Build configuration list for PBXProject "Stacks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43960AFA262E5B8E00485DFA /* Debug */,
-				43960AFB262E5B8E00485DFA /* Release */,
+				0A359A9F2561709900BEB2F0 /* Debug */,
+				0A359AA02561709900BEB2F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43960AFC262E5B8E00485DFA /* Build configuration list for PBXNativeTarget "RayWenderlichNavigation" */ = {
+		0A359AA12561709900BEB2F0 /* Build configuration list for PBXNativeTarget "Stacks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43960AFD262E5B8E00485DFA /* Debug */,
-				43960AFE262E5B8E00485DFA /* Release */,
+				0A359AA22561709900BEB2F0 /* Debug */,
+				0A359AA32561709900BEB2F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 43960AE5262E5B8D00485DFA /* Project object */;
+	rootObject = 0A359A8A2561709800BEB2F0 /* Project object */;
 }
