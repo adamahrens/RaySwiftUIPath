@@ -35,7 +35,7 @@ import SwiftUI
 struct MovieList: View {
   @StateObject var movieStore = MovieStore()
   @State private var isPresented = false
-  @ObservedObject private var userStore = UserStore()
+  @EnvironmentObject var userStore: UserStore
 
   var body: some View {
     NavigationView {
@@ -68,6 +68,6 @@ struct MovieList: View {
 
 struct MovieList_Previews: PreviewProvider {
   static var previews: some View {
-    MovieList(movieStore: MovieStore())
+    MovieList(movieStore: MovieStore()).environmentObject(UserStore())
   }
 }

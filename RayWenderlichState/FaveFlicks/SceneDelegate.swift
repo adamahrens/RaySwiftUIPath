@@ -42,6 +42,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     options connectionOptions: UIScene.ConnectionOptions
   ) {
     let contentView = MovieList()
+      .environmentObject(UserStore())
 
     if let windowScene = scene as? UIWindowScene {
       let window = UIWindow(windowScene: windowScene)
