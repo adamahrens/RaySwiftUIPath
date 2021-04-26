@@ -32,93 +32,42 @@
 
 import SwiftUI
 
-// MARK:- Directions
-/*
- * Everything you need is in this file!
- * Use an iPad scheme for previews
- * Add Navigation from each row in the list of tracks to a DetailView for that track
- * Try presenting a popover when the MeowMixHeader is tapped. Use the MessagePopover view.
- * Check out the TODO in this file to learn more about options for navigation views.
- */
+struct MovieList: View {
+  @StateObject var movieStore = MovieStore()
+  @State private var isPresented = false
+  @ObservedObject private var userStore = UserStore()
 
-struct ContentView: View {
-  @State private var showingPopover = false
-  
-  let mix = MeowMix()
-  
   var body: some View {
     NavigationView {
-      VStack(spacing: 0.0) {
-        MeowMixHeader()
-          .padding()
-          .onTapGesture {
-            // trigger message popover here
-            showingPopover = true
-          }.popover(isPresented: $showingPopover, content: {
-            MessagePopover()
-          })
-        
-        Divider()
-          .padding()
-        
-        List(mix.tracks) { track in
-          NavigationLink(
-            destination: DetailView(track: track),
-            label: {
-              TrackRow(track: track)
-            })
+      List {
+        ForEach(movieStore.movies, id: \.title) {
+          MovieRow(movie: $0)
         }
-        
-        FeaturedCats(artists: mix.tracks.map(\.artist))
-          .padding(.vertical)
-          .background(Color.gray.opacity(0.2))
+        .onDelete(perform: movieStore.deleteMovie)
       }
-      .navigationViewStyle(StackNavigationViewStyle())
-      .navigationBarHidden(true)
+      .sheet(isPresented: $isPresented) {
+        AddMovie(movieStore: movieStore, showModal: $isPresented)
+      }
+      .navigationBarTitle(Text("Fave Flicks"))
+      .navigationBarItems(
+        leading:
+          NavigationLink(destination: UserView()) {
+            HStack {
+              Image(systemName: "person.fill")
+              Text(userStore.currentUserInfo.userName)
+            }
+          },
+        trailing:
+          Button(action: { isPresented.toggle() }) {
+            Image(systemName: "plus")
+          }
+      )
     }
   }
 }
 
-struct DetailView: View {
-  let track: Track
-  
-  var body: some View {
-    ZStack {
-      track.gradient
-        .ignoresSafeArea()
-      
-      VStack {
-        Text(track.title)
-          .font(.largeTitle)
-          .fontWeight(.black)
-        Text(track.artist)
-          .font(.title)
-          .fontWeight(.semibold)
-        
-        track.thumbnail
-          .resizable()
-          .scaledToFit()
-          .padding(50)
-      }
-      .foregroundColor(.white)
-    }
-  }
-}
-
-struct MessagePopover: View {
-  var body: some View {
-    Text("These cats are not available in your region 😿")
-      .font(.title)
-      .padding()
-  }
-}
-
-struct ContentView_Previews: PreviewProvider {
+struct MovieList_Previews: PreviewProvider {
   static var previews: some View {
-    let mix = MeowMix()
-    
-    ContentView()
-    DetailView(track: mix.tracks[0])
+    MovieList(movieStore: MovieStore())
   }
 }
-
