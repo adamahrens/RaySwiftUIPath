@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4380C551264A288E000F739B /* GenreScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4380C550264A288E000F739B /* GenreScrollView.swift */; };
 		495E970425320BBD004B5E32 /* SIMD3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E970325320BBD004B5E32 /* SIMD3.swift */; };
 		495E970925320BF6004B5E32 /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E970825320BF6004B5E32 /* Hashable.swift */; };
 		495E970D25320D0E004B5E32 /* UIViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E970C25320D0E004B5E32 /* UIViewControllerRepresentable.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4380C550264A288E000F739B /* GenreScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreScrollView.swift; sourceTree = "<group>"; };
 		495E970325320BBD004B5E32 /* SIMD3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMD3.swift; sourceTree = "<group>"; };
 		495E970825320BF6004B5E32 /* Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashable.swift; sourceTree = "<group>"; };
 		495E970C25320D0E004B5E32 /* UIViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentable.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				49683F9A2531C21C00567556 /* Genre.swift */,
 				49D74AB1252D0347004662E8 /* App.swift */,
 				49D74AB3252D0347004662E8 /* ContentView.swift */,
+				4380C550264A288E000F739B /* GenreScrollView.swift */,
 				49D74AB5252D034A004662E8 /* Assets.xcassets */,
 				49D74ABA252D034A004662E8 /* Info.plist */,
 			);
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D74AB4252D0347004662E8 /* ContentView.swift in Sources */,
+				4380C551264A288E000F739B /* GenreScrollView.swift in Sources */,
 				495E971125320D54004B5E32 /* BlurView.swift in Sources */,
 				495E970925320BF6004B5E32 /* Hashable.swift in Sources */,
 				495E970425320BBD004B5E32 /* SIMD3.swift in Sources */,

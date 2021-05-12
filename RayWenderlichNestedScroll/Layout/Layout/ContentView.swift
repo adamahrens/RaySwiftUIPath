@@ -41,10 +41,15 @@ struct ContentView: View {
         ScrollViewReader { reader in
           LazyVStack {
             ForEach(Genre.list) { genre in
-              genre.subgenres.randomElement()?.view.id(genre)
-            }.onChange(of: selectedGenre, perform: { value in
-              reader.scrollTo(value, anchor: .center)
-            })
+              GenreScrollView(genre: genre)
+                .id(genre)
+            }
+          }.onChange(of: selectedGenre) { genre in
+            withAnimation {
+              reader.scrollTo(genre, anchor: .top)
+            }
+            
+            selectedGenre = nil
           }
         }
       }
@@ -65,7 +70,7 @@ struct ContentView: View {
   }
 }
 
-private extension Genre.Subgenre {
+extension Genre.Subgenre {
   var view: some View {
     RoundedRectangle(cornerRadius: 8)
       .fill(
