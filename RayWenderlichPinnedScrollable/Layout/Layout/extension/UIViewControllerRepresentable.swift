@@ -18,10 +18,6 @@
 /// merger, publication, distribution, sublicensing, creation of derivative works,
 /// or sale is expressly withheld.
 ///
-/// This project and source code may use libraries or frameworks that are
-/// released under various Open-Source licenses. Use of those libraries and
-/// frameworks are governed by their own individual licenses.
-///
 /// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 /// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 /// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -30,57 +26,8 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import SwiftUI
+import protocol SwiftUI.UIViewRepresentable
 
-struct ContentView: View {
-  var body: some View {
-    // Init uses flexible sizing
-    // fixed, flexible, adaptive
-    // Use scrollViews when the Grid won't fit
-    LazyVGrid(columns: [.init(.fixed(80)), .init(), .init()]) {
-      ForEach(
-        Genre.list.randomElement()!.subgenres.shuffled().prefix(20),
-        content: \.view
-      )
-    }
-    .padding(.horizontal)
-  }
-}
-
-private extension Genre.Subgenre {
-  var view: some View {
-    RoundedRectangle(cornerRadius: 8)
-      .fill(
-        LinearGradient(
-          gradient: .init(
-            colors: AnyIterator { } .prefix(2).map {
-              .random(saturation: 2 / 3, value: 0.85)
-            }
-          ),
-          startPoint: .topLeading, endPoint: .bottomTrailing
-        )
-      )
-      .frame(height: 125)
-      .overlay(
-        Image("Genre/\(Int.random(in: 1...92))")
-          .resizable()
-          .saturation(0)
-          .blendMode(.multiply)
-          .scaledToFit()
-      )
-      .overlay(
-        Text(name)
-          .foregroundColor(.white)
-          .fontWeight(.bold)
-          .padding(10)
-          .frame(alignment: .bottomLeading),
-        alignment: .bottomLeading
-      )
-  }
-}
-
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-  }
+public extension UIViewRepresentable {
+  func updateUIView(_: UIViewType, context _: Context) { }
 }

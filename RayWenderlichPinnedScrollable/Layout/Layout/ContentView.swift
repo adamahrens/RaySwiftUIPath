@@ -33,17 +33,36 @@
 import SwiftUI
 
 struct ContentView: View {
+  @State private var selectedGenre = Genre.list.first
+
   var body: some View {
-    // Init uses flexible sizing
-    // fixed, flexible, adaptive
-    // Use scrollViews when the Grid won't fit
-    LazyVGrid(columns: [.init(.fixed(80)), .init(), .init()]) {
-      ForEach(
-        Genre.list.randomElement()!.subgenres.shuffled().prefix(20),
-        content: \.view
-      )
+    ScrollView {
+      LazyVStack(pinnedViews: [.sectionHeaders, .sectionFooters]) {
+        ForEach(Genre.list) { genre in
+          Section(header: genre.header, footer: genre.header) {
+            ForEach(genre.subgenres.prefix(5)) {
+              $0.view.frame(width: 125)
+            }
+          }
+        }
+      }
     }
-    .padding(.horizontal)
+  }
+}
+
+private extension Genre {
+  var header: some SwiftUI.View {
+    HStack {
+      Text(name)
+        .font(.title2)
+        .fontWeight(.bold)
+        .padding(.leading)
+        .padding(.vertical, 8)
+
+      Spacer()
+    }
+    .background(UIBlurEffect.View(blurStyle: .systemThinMaterial))
+    .frame(maxWidth: .infinity)
   }
 }
 
