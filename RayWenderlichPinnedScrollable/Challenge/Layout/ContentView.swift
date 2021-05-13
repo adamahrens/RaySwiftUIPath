@@ -37,16 +37,24 @@ struct ContentView: View {
 
   var body: some View {
     NavigationView {
-      ScrollViewReader { scrollProxy in
-        VStack {
-          let genre = Genre.list.randomElement()!
-          genre.header
-          genre.subgenres.randomElement()!.view
-
-        }
-        .onChange(of: selectedGenre) { genre in
-          scrollProxy.scrollTo(selectedGenre, anchor: .top)
-          selectedGenre = nil
+      ScrollView {
+        ScrollViewReader { scrollProxy in
+          LazyVStack(pinnedViews: .sectionHeaders) {
+            ForEach(Genre.list) { genre in
+              Section(header: genre.header) {
+                LazyVGrid(columns: [.init(), .init()]) {
+                  ForEach(genre.subgenres) { sub in
+                    sub.view
+                  }
+                }
+              }
+              .id(genre)
+            }
+          }
+          .onChange(of: selectedGenre) { genre in
+            scrollProxy.scrollTo(selectedGenre, anchor: .top)
+            selectedGenre = nil
+          }
         }
       }
       .navigationBarTitleDisplayMode(.inline)
