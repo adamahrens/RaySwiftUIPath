@@ -9,9 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-      VStack {
-        Text("Hello, world!")
+      HStack(alignment: .bottom) {
+        Image("Cake VStack")
+          .resizable()
+          .scaledToFit()
+        Text("Yummy!")
           .padding()
+        Image("Pancake VStack")
+          .resizable()
+          .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
       }
     }
 }
