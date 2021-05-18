@@ -40,6 +40,7 @@ struct ContentView: View {
           .resizable()
           .scaledToFit()
           .frame(width: reader.size.width * 0.33)
+          .padding(-reader.size.width / 30.0)
       }
     }
     .frame(width: 300)
